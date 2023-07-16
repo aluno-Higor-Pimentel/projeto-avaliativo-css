@@ -1,0 +1,60 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Seção à esquerda (desktop) */
+  #left-section {
+    float: left;
+    width: 25%;
+    padding: 20px;
+  }
+  
+  #left-section img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Seção principal */
+  #main-section {
+    margin-left: 25%;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .subsection {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilização do rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilização responsiva */
+  @media (max-width: 768px) {
+    /* Seção à esquerda (mobile e tablet) */
+    #left-section {
+      float: none;
+      width: 100%;
+    }
+  
+    /* Posicionamento vertical das seções (mobile e tablet) */
+    #left-section,
+    #main-section {
+      margin-left: 0;
+    }
+  }
+  
