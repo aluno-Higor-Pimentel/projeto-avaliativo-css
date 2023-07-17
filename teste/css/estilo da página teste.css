@@ -12,6 +12,7 @@ body {
   background-size: cover;
 }
 
+
 /* estou trabalhando na coloração da sessão de perfil aqui */
 
 .profile-section {
@@ -29,10 +30,10 @@ body {
 
 
 .profile-section img {
-  max-width: 280px; /* Define a largura máxima da imagem */
-  max-height: 500px; /* Define a altura máxima da imagem */
-  width: auto; /* Permite que a largura seja ajustada proporcionalmente */
-  height: auto; /* Permite que a altura seja ajustada proporcionalmente */
+  max-width: 280px; 
+  max-height: 500px; 
+  width: auto; 
+  height: auto; 
   border-radius: 50%;
   margin-right: 10px;
   margin-top: 70px;
@@ -47,44 +48,43 @@ body {
 .profile-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinha à esquerda */
-  justify-content: center; /* Centraliza verticalmente */
-  margin-top: 20px; /* Espaçamento entre a imagem e o texto */
-  margin-left: 30px; /* Espaçamento à esquerda */
+  align-items: flex-start; 
+  justify-content: center; 
+  margin-top: 20px; 
+  margin-left: 30px;
 }
 
 
 .profile-info h2 {
   font-size: 24px;
   font-weight: bold;
-  margin: 10px 0; /* Adiciona espaçamento vertical */
+  margin: 10px 0; 
   color: #fff;
 }
 
 .profile-info p {
   font-size: 16px;
-  margin: 10px 0; /* Adiciona espaçamento vertical */
+  margin: 10px 0; 
   color: #fff;
 }
-/* Seu CSS existente */
 
 .btn a {
-  color: white; /* Cor do texto do botão */
-  background-color: #0366d6; /* Cor de fundo do botão */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Arredondamento das bordas do botão */
-  text-decoration: none; /* Remover sublinhado do link */
+  color: white; 
+  background-color: #0366d6; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  text-decoration: none; 
 }
 
 .btn a:hover {
-  background-color: #0351a1; /* Cor de fundo do botão ao passar o mouse */
+  background-color: #0351a1; 
 }
 
-/* Adicione as linhas abaixo ao final do seu CSS */
+
 
 .btn a {
-  margin-left: -10px; /* Ajusta a posição para a esquerda */
-  margin-top: -5px; /* Ajusta a posição para cima */
+  margin-left: -10px; 
+  margin-top: -5px; 
 }
 
 /* AQUI VAMOS TRABALHAR A CAIXA QUE IRÁ CONTER AS INFORMAÇÕES da nossa main */
@@ -94,16 +94,16 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 25px; /* Espaçamento do topo da página */
-  margin-left: 40px; /* Centralização horizontal */
-  margin-right: 40px; /* Centralização horizontal */
-  width: 100%; /* Aumenta a largura para ocupar todo o espaço disponível */
+  margin-top: 25px; 
+  margin-left: 40px; 
+  margin-right: 40px; 
+  width: 100%; 
 }
 
 /* Estilização da caixa principal */
 .main-box {
-  height: 750px; /* Aumenta a altura para 750px */
-  width: 100%; /* Aumenta a largura para ocupar todo o espaço disponível */
+  height: 900px; 
+  width: 300px; 
   border: 3px solid #f2f2f2;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -116,73 +116,39 @@ body {
 /* aqui é a estilização dos elementos da main*/
 
 .section-box {
-  background-color: #b0acac; /* Cor de fundo em cinza claro */
+  background-color: #b0acac; 
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Ajuste a opacidade para criar o efeito de profundidade */
-  margin-top: 20px; /* Ajuste a margem superior conforme desejado */
-  border: 1px solid #ccc; /* Adiciona uma borda sutil */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px; 
+  border: 1px solid #ccc; 
 }
 
 .section-box h3 {
-  color: #333; /* Cor do título */
+  color: #333; 
 }
 
 .section-box p {
-  color: #555; /* Cor do texto */
+  color: #555; 
 }
 
 .section-box::after {
   content: '';
   display: block;
   height: 1px;
-  background-color: #999; /* Cor da linha/divisor */
-  margin-top: 10px; /* Espaçamento entre o conteúdo e a linha/divisor */
+  background-color: #999; 
+  margin-top: 10px; 
 }
 
 .section-box:last-child {
-  margin-bottom: 0; /* Remove a margem inferior da última section-box */
+  margin-bottom: 0; 
 }
 
 /* estilização dos cards*/
-.card {
-  width: calc(33% - 20px); /* Altere o valor para ajustar o número de cards por linha */
-  margin-bottom: 20px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
 
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
 
-.card h3 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  color: #555;
-}
-
-.card a {
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #0366d6;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-/*botão flutuante do zao*/
+/*botão flutuante do zap*/
 
 .whatsapp-button {
   position: fixed;
