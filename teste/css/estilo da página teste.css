@@ -28,65 +28,182 @@ body {
 }
 
 
-/* estou trabalahndo na imagem de perfil aqui nessa linha de código abaixo */
 .profile-section img {
-  width: 200px; /* Aumenta o tamanho da imagem */
-  height: 200px; /* Aumenta o tamanho da imagem */
+  max-width: 280px; /* Define a largura máxima da imagem */
+  max-height: 500px; /* Define a altura máxima da imagem */
+  width: auto; /* Permite que a largura seja ajustada proporcionalmente */
+  height: auto; /* Permite que a altura seja ajustada proporcionalmente */
   border-radius: 50%;
   margin-right: 10px;
-  border: 10px solid #004080; /* Define a cor e a espessura do contorno azul */
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7); /* Adiciona um sombreamento forte */
-
-  /* Mistura de cores para o contorno mais escuro */
-  background-color: rgba(0, 0, 128, 0.4); /* Define uma cor azul mais escura com transparência */
+  margin-top: 70px;
+  border: 10px solid #004080;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.7);
 }
+
+
 
 /* estou trabalhando nas informações da sessão de perfil aqui */
 
 .profile-info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Alinha à esquerda */
+  justify-content: center; /* Centraliza verticalmente */
+  margin-top: 20px; /* Espaçamento entre a imagem e o texto */
+  margin-left: 30px; /* Espaçamento à esquerda */
 }
+
 
 .profile-info h2 {
   font-size: 24px;
   font-weight: bold;
-  margin: 0;
+  margin: 10px 0; /* Adiciona espaçamento vertical */
   color: #fff;
 }
 
 .profile-info p {
   font-size: 16px;
-  margin: 0;
+  margin: 10px 0; /* Adiciona espaçamento vertical */
   color: #fff;
 }
+/* Seu CSS existente */
 
-/* estou trabalahndo nas informações da main aquii */
+.btn a {
+  color: white; /* Cor do texto do botão */
+  background-color: #0366d6; /* Cor de fundo do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Arredondamento das bordas do botão */
+  text-decoration: none; /* Remover sublinhado do link */
+}
 
+.btn a:hover {
+  background-color: #0351a1; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Adicione as linhas abaixo ao final do seu CSS */
+
+.btn a {
+  margin-left: -10px; /* Ajusta a posição para a esquerda */
+  margin-top: -5px; /* Ajusta a posição para cima */
+}
+
+/* AQUI VAMOS TRABALHAR A CAIXA QUE IRÁ CONTER AS INFORMAÇÕES da nossa main */
+
+/* Estilização da seção principal */
 .main-section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 60px; /* Espaçamento do topo da página */
+  margin-top: 25px; /* Espaçamento do topo da página */
   margin-left: 40px; /* Centralização horizontal */
   margin-right: 40px; /* Centralização horizontal */
+  width: 100%; /* Aumenta a largura para ocupar todo o espaço disponível */
 }
 
-.green-section {
-  background-color: #c0eac0;
-  padding: 10px;
+/* Estilização da caixa principal */
+.main-box {
+  height: 750px; /* Aumenta a altura para 750px */
+  width: 100%; /* Aumenta a largura para ocupar todo o espaço disponível */
+  border: 3px solid #f2f2f2;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+
+
+/* aqui é a estilização dos elementos da main*/
+
+.section-box {
+  background-color: #b0acac; /* Cor de fundo em cinza claro */
+  padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  margin-right: 20px; /* Espaçamento entre as seções */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Ajuste a opacidade para criar o efeito de profundidade */
+  margin-top: 20px; /* Ajuste a margem superior conforme desejado */
+  border: 1px solid #ccc; /* Adiciona uma borda sutil */
 }
 
-.green-section h3 {
-  color: white;
+.section-box h3 {
+  color: #333; /* Cor do título */
+}
+
+.section-box p {
+  color: #555; /* Cor do texto */
+}
+
+.section-box::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #999; /* Cor da linha/divisor */
+  margin-top: 10px; /* Espaçamento entre o conteúdo e a linha/divisor */
+}
+
+.section-box:last-child {
+  margin-bottom: 0; /* Remove a margem inferior da última section-box */
+}
+
+/* estilização dos cards*/
+.card {
+  width: calc(33% - 20px); /* Altere o valor para ajustar o número de cards por linha */
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.card a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/*botão flutuante do zao*/
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
   background-color: green;
-  padding: 5px 10px;
-  margin-bottom: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 }
 
-.green-section p {
-  color: #333;
+.whatsapp-button:hover {
+  background-color: darkgreen;
 }
+
+
